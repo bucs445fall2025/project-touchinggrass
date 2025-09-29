@@ -1,4 +1,4 @@
-# Scoring
+# Ranked scoring
 
 ## **User Story**
 As a player,
