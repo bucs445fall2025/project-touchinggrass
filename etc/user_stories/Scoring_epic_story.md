@@ -1,17 +1,16 @@
 # Scoring
 
 ## **Epic Story**
-[Write the user story using the approved format]
+As a gamer, I want to see my scores so I can tell if I'm improving.
 
 ---
 
 ## **Acceptance Criteria**
-- [Define the success conditions for this feature]
-- [How will we know when this is done?]
-- [What must be functional before release?]
+- Scores need to be stored and retrievable from the database
+- Each user must be able to see their N most recent scores
 
 ---
 
 ## **Notes**
-- [Any additional considerations or insights]
+- Probably doesn't make sense to store every score forever
 - [Potential risks or challenges]
