@@ -82,53 +82,58 @@ Yes, probably external server hsoting sofgtware.
 
 #### **7. What does success look like for this project?**
 **Client’s Response:**
-(Example: "If my players can see whose turn it is without me saying anything, that’s a win.")
+If I can play a full game of tetris on this website, it's a win.
 
 **Clarification & Notes:**
-- Focus on **visual clarity and notifications**.
+- Nice bonuses: score tracking, player profiles, different game modes
 
 ---
 
 #### **8. What risks are associated with a malicious user?**
 **Client’s Response:**
-(Example: "Not much, unless players try to cheat dice rolls.")
+- Someone could figure out a way to give themselves 99999 score and be permanently at the top of the leaderboard.
+- Someone could hack into other people's accounts maybe, but there's not really anything harmful they could do from there.
 
 **Clarification & Notes:**
-- Consider **server-side dice validation** to prevent cheating.
+- 
 
 ---
 
 #### **9. What is the expected lifetime of this software?**
 **Client’s Response:**
-(Example: "I want to use it for many campaigns, so it should last for years.")
+- This needs to work for at least a few months.
 
 **Clarification & Notes:**
-- Future **maintenance and updates** should be considered.
+- Doesn't make a whole lot of sense to keep working on this past the end of the semester.
 
 ---
 
 #### **10. What additional features would you like?**
 **Client’s Response:**
-(Example: "A way to send private messages to players would be cool.")
+- Global scoreboards
+- Player profiles
+- friends feature where you can follow people and see their scores
+- Extra game modes: score attack, time attack
+- T-spins working how they do in classic tetris would be cool
 
 **Clarification & Notes:**
-- Nice-to-have, but **not essential** for version 1.
+- Scoreboards are a priority, will require login to connect username to score, also working database
+- T-spins will be either easy or difficult to implement, hard to say which
 
 ---
 
 ## **Key Takeaways & Next Steps**
-- **Most important feature:** Initiative tracking
-- **Secondary features:** Dice rolling, notifications, private messaging
+- **Most important feature:** Working basic tetris gameplay
+- **Secondary features:** Scoreboards, advanced gameplay like T-spins, extra game modes, profiles and friends
 - **Deadline:** 3 months
-- **Risks:** Potential cheating in dice rolls
+- **Risks:** Scoreboard and profile hacking
 
 ### **Next Steps:**
-✅ Prioritize initiative tracking
-✅ Research existing products for inspiration
-✅ Explore integration options with Roll20/D&D Beyond
+✅ Get Godot embedded and working on the website
+✅ Set up a database that can store and fetch scores
 
 ---
 
 ### **Signatures**
-(Client) **[Client’s Name]** – *Reviewed & Approved*
-(Developer) **[Your Name]** – *Re
+(Client) **[Stella Young]** – *Reviewed & Approved*
+(Developer) **[Luis, Rachel, Stella]** – *Reviewed & Approved*
