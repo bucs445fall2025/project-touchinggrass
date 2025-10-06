@@ -53,7 +53,7 @@ N/A
 
 ### Requirement Target
 
-- Tetris Gameplay
+- Basic UI
 
 ### User Stories
 
