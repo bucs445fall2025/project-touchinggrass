@@ -1,9 +1,9 @@
-# << Project Title >>
+# Tetris Website
 ## CS 445 Final Project
-### << Semester, Year >>
+### Fall 2025
 
-### Team: << team name >>
-<< List Team Members >>
+### Team: touching grass
+Luis Ramon, Rachel Todd, Stella Young
 
 ## Getting Started
 <<One paragraph of project description goes here>>
@@ -18,7 +18,7 @@ A list of features, function or non-functional, you would like to add in the fut
   >>
   
 ## SRS
-[document](url to google doc)
+[document](https://docs.google.com/document/d/14sJqsqGyM0i7BVEjOX5WYZZixLbz8a7n0NOdckxyNMA/edit?usp=sharing)
   
 ### Prerequisites
 * [Docker](https://www.docker.com/)
