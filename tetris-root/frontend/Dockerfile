@@ -11,11 +11,10 @@
 # docker run -p 5173:5173 my-frontend-dev
 FROM node:22-alpine
 WORKDIR /app
-COPY package*.json ./
+COPY . /app
 RUN npm install
-COPY . .
 EXPOSE 5173
-CMD ["npm", "run", "dev", "--", "--host"]
+
 
 # Stage 2: Serve with nginx
 #FROM nginx:latest
