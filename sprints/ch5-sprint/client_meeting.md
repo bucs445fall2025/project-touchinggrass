@@ -18,7 +18,7 @@
 
 ## Requirement Flex Remaining
 
-0/3
+2/3
 
 ## Requirements Attempted in next Sprint
 
@@ -26,7 +26,7 @@
 
 ## Milestone Status
 
-Fail
+Pass
 
 ## Requested Changes
 
