@@ -2,7 +2,7 @@
 
 **Attended**: Stella, Rachel, Luis
 
-**DATE**: 10/9/25 6:30pm; 10/12/25
+**DATE**: 10/9/25 6:30pm
 
 ***
 
