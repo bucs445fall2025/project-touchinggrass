@@ -6,12 +6,13 @@
 
 ***
 
-## Sprint 4 Review
+## Sprint 5 Review
 
 ### SRS Sections Updated
 
-- Requirements
-- Software Architecture Diagram
+- Team Section
+- Testing
+- Requirements (at least 10)
 
 ### Sprint Requirements Attempted
 
@@ -19,11 +20,11 @@ Basic Tetris UI
 
 ### Completed Requirements
 
-Updated requirements and software architecture diagram
+A minimal tetris UI
 
 ### Incomplete Requirements
 
-Minimal tetris UI
+<< The work that has not been completed in this sprint. Be VERY detailed and specific regarding what isn't working and what needs to be completed >>
 
 ### The summary of the entire project
 
@@ -31,19 +32,19 @@ A tetris game you can play online on your computer (not mobile device friendly, 
 
 ***
 
-## Sprint 5 Planning
+## Sprint 6 Planning
 
 ## Requirements Flex
 
-5/5 requirement flexes remaining
+4/5 requirement flexes remaining
 
 ## Technical Debt
 
-Basic tetris UI
+n/a
 
 ### Requirement Target
 
-Basic tetris UI
+- Basic Tetris Movement
 
 ### User Stories
 
@@ -55,7 +56,8 @@ Basic tetris UI
 
 ### Action Items
 
-- Create a minimal UI for the tetris game
+- Add sprites for every rotation of every tetris piece
+- Add the ability to move a piece back and forth in the game panel with the right and left buttons
 
 
 ### Issues and Risks
