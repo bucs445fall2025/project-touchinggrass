@@ -20,7 +20,7 @@ Basic Tetris UI
 
 ### Completed Requirements
 
-A minimal tetris UI
+Basic Tetris UI
 
 ### Incomplete Requirements
 
@@ -58,6 +58,8 @@ n/a
 
 - Add sprites for every rotation of every tetris piece
 - Add the ability to move a piece back and forth in the game panel with the right and left buttons
+- Add the ability to move a piece down with the down button
+- Add the ability to rotate pieces
 
 
 ### Issues and Risks
@@ -66,4 +68,6 @@ n/a
 
 ### Team Work Assignments
 
-<< A list of each team member and their works assignments for this sprint >>
+- Stella: update SRS, ch 7 sprint, and any other documents that need it
+- Stella: get familiar with SQL and the Oracle database management software
+- Luis and Rachel: get tetris piece movement working

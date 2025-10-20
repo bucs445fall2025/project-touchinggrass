@@ -8,7 +8,7 @@
 ## **Acceptance Criteria**
 - Pieces should have audiovisual effects to indicate when they are locked into place at the bottom of the screen
 - Tetris music should play during gameplay
-- 
+- The game should run smoothly, without lagging or stuttering
 
 
 ---

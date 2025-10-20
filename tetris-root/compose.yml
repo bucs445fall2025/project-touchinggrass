@@ -9,6 +9,8 @@ services:
     volumes:
       - ./frontend/src:/app/src
 
+# TODO: switch from postgres to oracle
+
   # backend:
   #   build: ./backend
   #   ports:
