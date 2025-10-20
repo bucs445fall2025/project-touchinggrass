@@ -39,6 +39,8 @@ services:
       - ./frontend/src:/app/src
 >>>>>>> 5c4f7ec4c6df4bb61049bb288822e2c88d5a6acd
 
+# TODO: switch from postgres to oracle
+
   # backend:
   #   build: ./backend
   #   ports:

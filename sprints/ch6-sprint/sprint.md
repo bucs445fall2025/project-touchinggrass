@@ -1,0 +1,73 @@
+# Sprint Meeting Notes
+
+**Attended**: Stella, Rachel, Luis
+
+**DATE**: 10/9/25 6:30pm
+
+***
+
+## Sprint 5 Review
+
+### SRS Sections Updated
+
+- Team Section
+- Testing
+- Requirements (at least 10)
+
+### Sprint Requirements Attempted
+
+Basic Tetris UI
+
+### Completed Requirements
+
+Basic Tetris UI
+
+### Incomplete Requirements
+
+<< The work that has not been completed in this sprint. Be VERY detailed and specific regarding what isn't working and what needs to be completed >>
+
+### The summary of the entire project
+
+A tetris game you can play online on your computer (not mobile device friendly, probably)
+
+***
+
+## Sprint 6 Planning
+
+## Requirements Flex
+
+4/5 requirement flexes remaining
+
+## Technical Debt
+
+n/a
+
+### Requirement Target
+
+- Basic Tetris Movement
+
+### User Stories
+
+- Basic_tetris_gameplay
+
+### Planning
+
+<< Our team's detailed plan to complete the sprint >>
+
+### Action Items
+
+- Add sprites for every rotation of every tetris piece
+- Add the ability to move a piece back and forth in the game panel with the right and left buttons
+- Add the ability to move a piece down with the down button
+- Add the ability to rotate pieces
+
+
+### Issues and Risks
+
+<< A list of potential obstacles that could keep us from completing the sprint and what's being done about them >>
+
+### Team Work Assignments
+
+- Stella: update SRS, ch 7 sprint, and any other documents that need it
+- Stella: get familiar with SQL and the Oracle database management software
+- Luis and Rachel: get tetris piece movement working
