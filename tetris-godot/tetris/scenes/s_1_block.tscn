@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=3 uid="uid://baxjnf0tf5m1q"]
+
+[ext_resource type="Texture2D" uid="uid://bllhrqkhaedsl" path="res://sprites/s1-sprite.png" id="1_873ht"]
+
+[sub_resource type="GDScript" id="GDScript_s4te7"]
+script/source = "extends Node2D
+
+@export var step_size: float = 5.0
+@export var move_speed: float = 10.0
+@onready var ray_cast_right: RayCast2D = $RayCastRight
+
+
+var target_pos: Vector2
+var moving := false
+
+
+func _ready() -> void:
+	target_pos = position
+	ray_cast_right.enabled = true
+
+func _process(delta: float) -> void:
+	if ray_cast_right.is_colliding():
+		moving = false
+
+	if not moving:
+		if Input.is_action_just_pressed(\"move_right\"):
+			target_pos.x += step_size; moving = true
+		elif Input.is_action_just_pressed(\"move_left\"):
+			target_pos.x -= step_size; moving = true
+		elif Input.is_action_just_pressed(\"move_down\"):
+			target_pos.y += step_size; moving = true
+		#elif Input.is_action_just_pressed(\"rotate\"):
+			#target_pos.angle() *= PI;
+			#moving = true
+
+	if moving:
+		position = position.move_toward(target_pos, move_speed + delta)
+		if position.distance_to(target_pos) < 0.5:
+			position = target_pos
+			moving = false
+"
+
+[node name="S1 Block" type="Node2D"]
+script = SubResource("GDScript_s4te7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_873ht")

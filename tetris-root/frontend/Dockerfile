@@ -7,14 +7,12 @@
 # RUN npm run build
 
 
-# docker build -t my-frontend-dev .
-# docker run -p 5173:5173 my-frontend-dev
 FROM node:22-alpine
 
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
-COPY . .
+COPY . /app
 EXPOSE 5173
 CMD ["npm", "run", "dev", "--", "--host"]
 
