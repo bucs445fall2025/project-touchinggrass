@@ -2,15 +2,15 @@ extends Node2D
 
 @export var step_size: float = 40.0
 @export var move_speed: float = 20.0
-@onready var node: Node2D = $block
 @onready var ray_cast_right: RayCast2D = $RayCastRight
 @onready var ray_cast_left: RayCast2D = $RayCastLeft
 @onready var ray_cast_down: RayCast2D = $RayCastDown
-@onready var ray_cast_up: RayCast2D = $RayCastUp
+
 
 var target_pos: Vector2
 var moving := false
 
+const TILE_SIZE: Vector2 = Vector2(10, 10)
 
 func _ready() -> void:
 	target_pos = position
@@ -20,7 +20,7 @@ func _process(delta: float) -> void:
 	if not moving:
 		if Input.is_action_just_pressed("move_right"):
 			if !ray_cast_right.is_colliding():
-				target_pos.x += step_size; 
+				target_pos.x += step_size;
 				moving = true
 			else:
 				print("IS COLLIDING RIGHT")
@@ -39,11 +39,11 @@ func _process(delta: float) -> void:
 		elif Input.is_action_just_pressed("rotate"):
 			self.rotation_degrees += 90
 			print(self.rotation_degrees)
-			#target_pos.angle() *= PI;
-			#moving = true
+			moving = true
 
 	if moving:
 		position = position.move_toward(target_pos, move_speed + delta)
 		if position.distance_to(target_pos) < 0.5:
-			position = target_pos
+			position = target_pos.snapped(TILE_SIZE)
 			moving = false
+			
