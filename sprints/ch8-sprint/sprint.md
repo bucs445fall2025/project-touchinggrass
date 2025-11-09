@@ -45,11 +45,9 @@ A tetris game you can play online on your computer (website friendly)
 
 - Further implement tetris piece collision
 - Implement preview box for next tetris game piece
-- Game Embedded within docker containerized website
 
 ### User Stories
 
-- Website_user_story
 - Piece_collision_user_story
 - Tetris_preview_box
 
@@ -62,9 +60,7 @@ A tetris game you can play online on your computer (website friendly)
 ### Issues and Risks
 
 - Some blocks are working for piece collision but does not work for all the pieces which will worked on for this sprint
-- Fixing settings on docker for front end but will be able to resolve this with the help of office hours, documentation and help from team
 
 ### Team Work Assignments
 
-Rachel: Further implement tetris piece collision and tetris preview piece box
-Stella and Luis: Make sure game embedding works on containerized docker website
+Further implement tetris piece collision and tetris preview piece box
