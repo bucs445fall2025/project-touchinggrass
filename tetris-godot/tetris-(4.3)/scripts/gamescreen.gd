@@ -9,8 +9,6 @@ extends Node2D
 @onready var s1_block: PackedScene = preload("res://scenes/S1_Block.tscn")
 
 #@onready var can_we_spawn := get_tree().root.get_node("")
-
-const TILE_SIZE : Vector2 = Vector2(16, 1)  
 var blocks_to_spawn = []
 var has_spawned = false
 
@@ -43,12 +41,22 @@ func random_spawn(p1: Vector2, p2: Vector2) -> Vector2:
 func spawn_block ():
 	print("Spawning new block")
 	var chosen_block = blocks_to_spawn.pick_random() # choose random block from list
-
 	var spawn = chosen_block.instantiate() # instantiate block into a node in scene tree	
 	
 	# Set position before adding to scene
 	var spawn_location: Vector2 = random_spawn(point1, point2)
 	spawn.position = spawn_location
+	
+	# Connect with error checking
+	print("Attempting to connect signal...")
+	# Use FLAGS to make the connection more permissive
+	var connect_result = spawn.connect("block_stopped", Callable(self, "_on_block_stopped"), CONNECT_ONE_SHOT)
+	if connect_result == OK:
+		print("Signal connected successfully")
+	else:
+		push_error("Failed to connect signal: " + str(connect_result))
+		print("Failed to connect signal: " + str(connect_result))
+	
 	add_child(spawn)
 	print("Block spawned at position: ", spawn_location)
 
@@ -56,18 +64,4 @@ func _on_block_stopped():
 	print("_on_block_stopped handler called")
 	spawn_block()
 
-	
-	
-	
-	# Connect with error checking
-	#print("Attempting to connect signal...")
-	## Use FLAGS to make the connection more permissive
-	#var connect_result = spawn.connect("block_stopped", Callable(self, "_on_block_stopped"), CONNECT_ONE_SHOT)
-	#if connect_result == OK:
-		#print("Signal connected successfully")
-	#else:
-		#push_error("Failed to connect signal: " + str(connect_result))
-		#print("Failed to connect signal: " + str(connect_result))
-	
-	
 # Called when the node enters the scene tree for the first time.

@@ -37,8 +37,8 @@ func _process(delta: float) -> void:
 			else:
 				print("IS COLLIDING DOWN")
 		elif Input.is_action_just_pressed("rotate"):
-			self.rotation_degrees += 90
-			print(self.rotation_degrees)
+			#self.rotation_degrees += 90
+			#print(self.rotation_degrees)
 			moving = true
 
 	if moving:

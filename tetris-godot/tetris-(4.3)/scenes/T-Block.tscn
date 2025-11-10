@@ -1,13 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://b4dme1f5wamvk"]
+[gd_scene load_steps=3 format=3 uid="uid://b4dme1f5wamvk"]
 
-[ext_resource type="Script" uid="uid://dd8gw8kv8qjh4" path="res://scripts/block.gd" id="1_8nq7g"]
+[ext_resource type="Script" path="res://scripts/block.gd" id="1_8nq7g"]
 [ext_resource type="Texture2D" uid="uid://bdvnwnbybxb67" path="res://sprites/t-block.png" id="2_3jjv6"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_t5mdq"]
-size = Vector2(93, 62)
-
 [node name="T-Block" type="Node2D"]
-metadata/_edit_lock_ = true
 
 [node name="block" type="Node2D" parent="."]
 script = ExtResource("1_8nq7g")
@@ -15,11 +11,9 @@ script = ExtResource("1_8nq7g")
 [node name="Hitbox" type="Area2D" parent="block"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="block/Hitbox"]
-position = Vector2(-2.5, 2)
-shape = SubResource("RectangleShape2D_t5mdq")
 
 [node name="Sprite2D" type="Sprite2D" parent="block"]
-texture_filter = 1
+texture_filter = 2
 position = Vector2(-4.76837e-07, 4.76837e-07)
 scale = Vector2(5, 5)
 texture = ExtResource("2_3jjv6")

@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://bjog0uuedcnjh"]
 
 [ext_resource type="Texture2D" uid="uid://bllhrqkhaedsl" path="res://sprites/s1-sprite.png" id="1_7hotv"]
-[ext_resource type="Script" path="res://scripts/block.gd" id="1_r1rpr"]
+[ext_resource type="Script" uid="uid://dd8gw8kv8qjh4" path="res://scripts/block.gd" id="1_r1rpr"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1vpvx"]
-size = Vector2(191, 130)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_70jbk"]
+size = Vector2(189, 127)
 
 [node name="S1 Block" type="Node2D"]
 
@@ -14,16 +14,17 @@ script = ExtResource("1_r1rpr")
 [node name="Hitbox" type="Area2D" parent="block"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="block/Hitbox"]
-position = Vector2(0.499939, -3.05176e-05)
-shape = SubResource("RectangleShape2D_1vpvx")
+position = Vector2(0.5, 1.5)
+shape = SubResource("RectangleShape2D_70jbk")
 
 [node name="Sprite2D" type="Sprite2D" parent="block"]
+texture_filter = 1
 position = Vector2(-4, -35)
 scale = Vector2(10, 10)
 texture = ExtResource("1_7hotv")
 
 [node name="RayCastRight" type="RayCast2D" parent="block"]
-position = Vector2(-4.00006, -3.05176e-05)
+position = Vector2(-4, 0)
 rotation = -1.5708
 scale = Vector2(2, 2)
 collide_with_areas = true
