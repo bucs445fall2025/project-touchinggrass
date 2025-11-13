@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://clxvndvjc87li"]
+
+[ext_resource type="Script" uid="uid://dl0wkui5crvv4" path="res://scripts/gamescreen.gd" id="1_02ywm"]
+[ext_resource type="Texture2D" uid="uid://dxeatirrhs2qy" path="res://sprites/tetris-background.jpg" id="1_t7j57"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_02ywm")
+point1 = null
+point2 = null
+
+[node name="tetris background" type="TextureRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_t7j57")
+
+[node name="border" type="TextureRect" parent="tetris background"]
+layout_mode = 0
+offset_left = 362.0
+offset_top = 23.0
+offset_right = 756.0
+offset_bottom = 622.0
+
+[node name="grid" type="TextureRect" parent="tetris background/border"]
+layout_mode = 0
+offset_right = 197.0
+offset_bottom = 355.0
