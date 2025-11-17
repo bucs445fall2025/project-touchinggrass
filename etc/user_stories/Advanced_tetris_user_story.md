@@ -6,7 +6,6 @@
 
 ## **Acceptance Criteria**
 - One piece at a time can be stored for later use
-- T-spins (complicated, look up a video) should work
 - Pieces should broadcast a shadow or ghost piece image underneath them to indicate where they will land if hard-dropped.
 
 
