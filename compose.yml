@@ -2,15 +2,15 @@
 # http://localhost:3000/tetrisgame/tetris.html
 services:
   frontend:
-    build: ./frontend
+    build: ./src/frontend
     ports:
       - "3000:5173"
     #depends_on:
     #  - backend
     volumes:
-      - ./frontend/src:/app/src
+      - ./src/frontend/src:/app/src
 
-# TODO: switch from postgres to oracle
+# TODO: switch to MongoDB
 
   # backend:
   #   build: ./backend
