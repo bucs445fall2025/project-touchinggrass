@@ -1,0 +1,14 @@
+# Advanced tetris
+
+## **User Story**
+   As a tetris enthusiast, I want this tetris game to work exactly how I'm used to, so that I can have a consistent experience.
+---
+
+## **Acceptance Criteria**
+- One piece at a time can be stored for later use
+- Pieces should broadcast a shadow or ghost piece image underneath them to indicate where they will land if hard-dropped.
+
+
+---
+
+## **Notes**
