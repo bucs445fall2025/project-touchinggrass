@@ -1,0 +1,52 @@
+[gd_scene load_steps=4 format=3 uid="uid://b4dme1f5wamvk"]
+
+[ext_resource type="Script" uid="uid://dd8gw8kv8qjh4" path="res://scripts/block.gd" id="1_8nq7g"]
+[ext_resource type="Texture2D" uid="uid://bdvnwnbybxb67" path="res://sprites/t-block.png" id="2_3jjv6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t5mdq"]
+size = Vector2(93, 62)
+
+[node name="T-Block" type="Node2D"]
+metadata/_edit_lock_ = true
+
+[node name="block" type="Node2D" parent="."]
+script = ExtResource("1_8nq7g")
+
+[node name="Hitbox" type="Area2D" parent="block"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block/Hitbox"]
+position = Vector2(-2.5, 2)
+shape = SubResource("RectangleShape2D_t5mdq")
+
+[node name="Sprite2D" type="Sprite2D" parent="block"]
+texture_filter = 1
+position = Vector2(-4.76837e-07, 4.76837e-07)
+scale = Vector2(5, 5)
+texture = ExtResource("2_3jjv6")
+
+[node name="RayCastRight" type="RayCast2D" parent="block"]
+position = Vector2(-4.00006, -3.05176e-05)
+rotation = -1.5708
+scale = Vector2(2, 2)
+target_position = Vector2(-0.000103949, 24.5)
+collide_with_areas = true
+
+[node name="RayCastLeft" type="RayCast2D" parent="block"]
+position = Vector2(4.99994, -3.05176e-05)
+rotation = 1.5708
+scale = Vector2(2, 2)
+target_position = Vector2(0.000114808, 27.5)
+collide_with_areas = true
+
+[node name="RayCastUp" type="RayCast2D" parent="block"]
+position = Vector2(-6.10352e-05, 2.99997)
+rotation = 3.14159
+scale = Vector2(2, 2)
+target_position = Vector2(-7.23481e-05, 16.5)
+collide_with_areas = true
+
+[node name="RayCastDown" type="RayCast2D" parent="block"]
+position = Vector2(-6.10352e-05, 2.99997)
+scale = Vector2(2, 2)
+target_position = Vector2(3.05176e-05, 16)
+collide_with_areas = true

@@ -1,47 +1,44 @@
-# << Project Title >>
+# Tetris Website
 ## CS 445 Final Project
-### << Semester, Year >>
+### Fall 2025
 
-### Team: << team name >>
-<< List Team Members >>
+### Team: touching grass
+Luis Ramon, Rachel Todd, Stella Young
 
 ## Getting Started
-<<One paragraph of project description goes here>>
+This is meant to be a simple, clean implementation of tetris as defined in the [tetris spec](https://tetris.wiki/Tetris_Guideline), imbedded in a website that allows users to upload their scores to global leaderboards and compete with their friends.
 
 ### Roadmap
-  <<
-A list of features, function or non-functional, you would like to add in the future if you had time, i.e. Phase 2 stuff
-- [ ] Add Changelog
-- [ ] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-  >>
+- [ ] Fix grid system
+- [ ] Add remaining tetrominoes
+- [ ] Implement line clearing
+- [ ] Add ghost piece projection alongside hard drops
+- [ ] Add a scoring system
+- [ ] Implement piece storing
   
 ## SRS
-[document](url to google doc)
+[Software Requirements Specification document](https://docs.google.com/document/d/14sJqsqGyM0i7BVEjOX5WYZZixLbz8a7n0NOdckxyNMA/edit?usp=sharing)
   
 ### Prerequisites
 * [Docker](https://www.docker.com/)
-* <<any additional software. Be specific about versions.>>
 
 ### Installing
-<<
- A step by step series of examples that tell you how to get a development env running
-Say what the step will be  
-`Give the example`  
-And repeat  
-`until finished`  
-End with an example of getting some output from the system, such as a menu or prompt
->>
+1. Install Docker Hub and clone the repo
+`git clone https://github.com/bucs445fall2025/project-touchinggrass.git`
+2. cd to the repo
+`cd project-touchinggrass`
+3. Launch Docker Hub and bring the container up
+`docker compose up --build`
+4. Open [localhost:3000](http://localhost:3000) in your web browser to see the Vite template screen
+5. Open [localhost:3000/tetrisgame/tetris.html](http://localhost:3000/tetrisgame/tetris.html) to see the embedded Godot project
+
 
 ## Built With
- << list all frameworks and modules used here >>
-* [requests](https://docs.python-requests.org/en/latest/user/quickstart/#make-a-request) - request for humans
+* [Vite](https://vite.dev/) - frontend build tool
+* [Godot](https://godotengine.org/) - free and open source game engine
 
 ## License
-<< Add a [license](https://choosealicense.com/) >>
+This project is licensed under the GNU General Public License.
 
 ## Acknowledgments
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Thanks to CyberPotato for their [How to make Tetris in Godot 4](https://www.youtube.com/watch?v=4XxsbtvQJE0) tutorial
